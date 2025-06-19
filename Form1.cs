@@ -30,7 +30,7 @@ namespace WindowsFormsApp2
             // Проверка на пустые поля
             if (string.IsNullOrEmpty(inputA) || string.IsNullOrEmpty(inputB) || string.IsNullOrEmpty(inputC))
             {
-                lblResult.Text = "Ошибка! Все три поля должны быть заполнены.";
+                lblResult.Text = "Внимания! Все три поля должны быть заполнены.";
                 return;
             }
 
@@ -65,12 +65,12 @@ namespace WindowsFormsApp2
                 }
                 else
                 {
-                    lblResult.Text = "Ошибка! Треугольник с такими сторонами не существует.";
+                    lblResult.Text = "Внимания! Треугольник с такими сторонами не существует.";
                 }
             }
             catch (FormatException)
             {
-                lblResult.Text = "Ошибка! Введите корректные целые числа.";
+                lblResult.Text = "Внимания! Введите корректные целые числа.";
             }
         }
     }
